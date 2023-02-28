@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@100;500;700&display=swap');
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+html{
+    height:100%;
+}
+p{
+    font-size: 14px;
+    color:  hsl(228, 12%, 48%);
+    letter-spacing: 0.5px;
+    line-height: 20px;
+}
+body{
+    background-color: hsl(30, 38%, 92%);
+    height:100%;
+    margin:0px;
+
+}
+.card-container{
+    height:100%;
+
+}
+
+.card{
+    overflow: hidden;
+    border-radius: 10px;
+    width: 550px;
+    height: auto;
+    display: flex;
+}
+
+.text-container{
+    width:70%;
+    text-align: left;
+    padding: 30px 30px;
+   
+    background-color: hsl(0, 0%, 100%);
+}
+.preview-image>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+.name{
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
+    font-size: 30px;
+}
+.category{
+    margin-top: 0px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+.sale-price{
+    font-family: 'Fraunces', serif;
+    color: hsl(158, 36%, 37%);
+    font-size: 30px;
+}
+.original-price{
+    text-decoration:line-through;
+}
+.prices{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.add-to-cart{
+    cursor: pointer;
+    box-shadow: 1px 1px 0 hsl(228, 12%, 48%);
+    border: none;
+    outline: none;
+    width: 100%;
+    color:white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    background-color: hsl(158, 36%, 37%);
+}
+/* media query for mobile screen */
+@media screen and (max-width: 570px) {
+    .card{
+        
+        display: flex;
+        flex-direction: column;
+    }
+    .text-container{
+        width: auto;
+
+    }
+    .card-container{
+        height: auto;
+        margin: 30px 20px;
+    }
+    
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
